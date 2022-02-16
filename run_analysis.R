@@ -76,7 +76,7 @@ total_data <- rename(total_data, activity = activity_name)
 
 # Group total data by activity and subject and calculate the means of the non-groups variables
 # Assign result to new data frame
-total_means <- total_data %>% group_by(activity, subject) %>% summarise_all(sum)
+total_means <- total_data %>% group_by(activity, subject) %>% summarise_all(mean)
 # long form of data frame where there is one average per row
 library(reshape2)
 total_means_long <- melt(total_means, id=c('activity', 'subject'), value.name='average')
