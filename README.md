@@ -52,3 +52,6 @@ Type of activity for each of the six integers (1-6) in the y_train.txt and y_tex
 9. Reshape into long form of data set with one measure mean per combination of activity and subject.
 10. Write data set to 'total_means_long.txt' text file in the working directory.
 
+## Reading the tidy data file
+The first row is the headers, so include header = TRUE to read the file when saved to your working directory.  
+read.table('./total_means_long.txt', header=TRUE)
