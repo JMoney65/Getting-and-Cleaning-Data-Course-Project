@@ -7,15 +7,22 @@ https://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartph
 The source files are in a zipped archive here  
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip  
 1. Unzip all the files in the archive.  
-2. Copy the following files to a data folder in your working directory.  
+2. Copy the following 6 files to a data folder in your working directory.  
 
-features.txt: 561-feature vector with time and frequency domain variables. These are fully described in features_info.txt.  
-X_train.txt: 7352 observations for training data set. Each row 561-feature vector. This represents a subject and an activity. The subject is found in the same row in the subject_train.txt file. The activity is found in the same row of the y_train.txt file.  
-X_test.txt:  2947 observations for test data set. Same format as training data set. 
-y_train.txt: Integer from 1-6 with the activity for each observation in the training data set.  
-y_text.txt: Activity info for the test data set. Same format as training.    
-subject_train.txt: 7352 rows. Each row includes an integer with the subject id for that observation in training data set. The subject id for training is set of 21 integers in range 1-30 representing 70% of 30 subject randomly assigned to training data set.  
-subject_test.txt: 2947 rows. Same format as training described above. The subject id for test is set of 9 integers in range 1-30 representing 30% of 30 subject randomly assigned to test data set.  
+features.txt  
+561-feature vector with time and frequency domain variables. These are fully described in features_info.txt.  
+X_train.txt  
+7352 observations for training data set. Each row 561-feature vector. This represents a subject and an activity. The subject is found in the same row in the subject_train.txt file. The activity is found in the same row of the y_train.txt file.  
+X_test.txt:  
+2947 observations for test data set. Same format as training data set.  
+y_train.txt:  
+Integer from 1-6 with the activity for each observation in the training data set.  
+y_text.txt:  
+Activity info for the test data set. Same format as training.  
+subject_train.txt:  
+7352 rows. Each row includes an integer with the subject id for that observation in training data set. The subject id for training is set of 21 integers in range 1-30 representing 70% of 30 subject randomly assigned to training data set.  
+subject_test.txt:  
+2947 rows. Same format as training described above. The subject id for test is set of 9 integers in range 1-30 representing 30% of 30 subject randomly assigned to test data set.  
 
 3. copy run_analysis.R to the working directory.
 
@@ -25,9 +32,12 @@ subject_test.txt: 2947 rows. Same format as training described above. The subjec
 The following files have supplemental information on the variables but are not accessed by the script and do not  
 need to be in the data folder in the working directory.
 
-README.txt: Detailed description of the data and key files.  
-features_info.txt: Detailed description of the 561 measurements.  
-activity_labels.txt: Type of activity for each of the six integers (1-6) in the y_train.txt and y_text.txt files.  
+README.txt:  
+Detailed description of the data and key files.  
+features_info.txt:  
+Detailed description of the 561 measurements.  
+activity_labels.txt:  
+Type of activity for each of the six integers (1-6) in the y_train.txt and y_text.txt files.  
 
 ## Description of script
 
@@ -41,5 +51,4 @@ activity_labels.txt: Type of activity for each of the six integers (1-6) in the 
 8. Group combined data set by activity and subject. Calculate means for the 66 measures.
 9. Reshape into long form of data set with one measure mean per combination of activity and subject.
 10. Write data set to 'total_means_long.txt' text file in the working directory.
-11. 
 
