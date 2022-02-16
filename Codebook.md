@@ -109,4 +109,4 @@ The subset includes the following mean and standard deviation measurements*
         fBodyBodyGyroJerkMag-std()  
        
 average  
-*The average of the measurement variable for subject and activity*  
+*The average of the measurement variable for subject and activity combination*  
