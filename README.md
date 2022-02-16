@@ -45,7 +45,7 @@ Type of activity for each of the six integers (1-6) in the y_train.txt and y_tex
 2. Read in training data, add feature names to columns
 3. Read in test data, add feature names to columns
 4. Stack the training and test data into one combined data frame
-5. Subset the combined data with only the mean and standard deviation measures. Only 66 measures with the pattern mean() and std() are included.
+5. Subset the combined data with only the mean and standard deviation measures. Only 66 measures with the name pattern mean() and std() are included.
 6. Read in the corresponding subject ids for training and test data. Stack into combined set of subject ids in same order as combined data set. Add subject ids to combined data set.
 7. Read in the corresponding activity labels (integers 1-6) for training and test data. Add description of activity. Stack into combined set in same order as combined data set. Add activity descriptions to combined data set.
 8. Group combined data set by activity and subject. Calculate means for the 66 measures.
